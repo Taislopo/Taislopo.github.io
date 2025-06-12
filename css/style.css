@@ -1,7 +1,7 @@
-.titulo-nome{
+.titulo-nome>h1{
     /* rem é 16 px */
     font-size: 3rem;
-    font-weight: 400;
+ 
     /* se é maiouscula minuscula
     text-transform: capitalize; */
 }
@@ -25,4 +25,63 @@
 .dados-pessoais strong{
     text-transform: capitalize;
 
+}
+.dados-de-contato label, 
+.dados-pessoais label{
+    margin-top: 5px;
+}
+.dados-de-contato>div{
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(127, 107, 107);
+    padding: 10px;
+}
+.dados-de-contato>div:hover{
+    scale: 1.02;
+    transition: ease-out 0.2s;
+    box-shadow: 3px 3px 10px rgb(127, 107, 107);
+}
+
+
+.formacao>h3, 
+.experiencia>h3, 
+.idiomas>h3, 
+.projetos>h3{
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.formacao .cartao{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100px;
+}
+.formacao .cartao:hover{
+    scale: 1.02;
+    transition: ease-out 0.2s;
+    box-shadow: 3px 3px 10px rgb(127, 107, 107);
+}
+.experiencia>label>strong, 
+.projetos>label>strong{
+    font-weight: 700;
+
+} 
+.experiencia .cartao{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100px;
+    margin: 3px;
+}
+.experiencia .cartao:hover{
+    scale: 1.02;
+    transition: ease-out 0.2s;
+    box-shadow: 3px 3px 10px rgb(127, 107, 107);
 }

@@ -1,12 +1,37 @@
+
+@font-face {
+    font-family: 'anton';
+    src: url(../font/Anton-Regular.ttf);
+}
+.container{
+   
+   
+
+}
+.container strong{
+    color: #49839B;
+}
+.container label{
+  color: #404343;
+}
+.titulo-nome{
+    border-radius: 10px;
+    background-color: #EDF2F5;
+    border:2px solid #49839B;
+ 
+}
 .titulo-nome>h1{
+    text-transform: uppercase;
     /* rem é 16 px */
     font-size: 3rem;
- 
+    color: #49839B
     /* se é maiouscula minuscula
     text-transform: capitalize; */
+
 }
 
 .titulo-nome h5{
+    color:#49839B;
     font-size: 1.5rem;
     /* largura da fonte */
     font-weight: 300;
@@ -16,6 +41,7 @@
 .dados-contato {
     display: flex;
     flex-direction: column;
+   
 }
 .dados-pessoais>label,
 .dados-contato>label {
@@ -26,37 +52,39 @@
     text-transform: capitalize;
 
 }
-.dados-de-contato label, 
+.dados-contato label, 
 .dados-pessoais label{
     margin-top: 5px;
 }
-.dados-de-contato>div{
-    width: 50%;
-    margin: 0 auto;
-    border: 2px solid black;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px rgb(127, 107, 107);
-    padding: 10px;
+
+.dados-contato{
+  
+   
+    margin-top:10px ;
+    padding-bottom: 10px;  
+
 }
-.dados-de-contato>div:hover{
-    scale: 1.02;
-    transition: ease-out 0.2s;
-    box-shadow: 3px 3px 10px rgb(127, 107, 107);
+.dados-contato>a{
+    text-decoration: none;
+    color: black;
 }
 
 
 .formacao>h3, 
-.experiencia>h3, 
-.idiomas>h3, 
+.experiencia>h3,  
 .projetos>h3{
-    border-bottom: 2px solid black;
+
+    text-transform: uppercase;
+    color:#49839B;
+    border-bottom: 2px solid #49839B;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 .formacao .cartao{
+    background-color: #EDF2F5;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border:  2px solid #49839B;
     border-radius: 15px;
     padding: 10px;
     height: 100px;
@@ -72,9 +100,10 @@
 
 } 
 .experiencia .cartao{
+     background-color: #EDF2F5;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border:  2px solid #49839B;
     border-radius: 15px;
     padding: 10px;
     height: 100px;
@@ -84,4 +113,33 @@
     scale: 1.02;
     transition: ease-out 0.2s;
     box-shadow: 3px 3px 10px rgb(127, 107, 107);
+}
+.projetos .cartao{
+     background-color: #EDF2F5;
+    display:flex;
+    flex-direction: column;
+    border:  2px solid #49839B;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100px ;
+    margin: 3px;
+    margin-bottom: 100px;
+}
+.projetos .cartao:hover{
+     background-color: #EDF2F5;
+    /* O valor 1.02 significa que o elemento será aumentado para 102% do seu tamanho original. */
+    scale: 1.02;
+    /* em um estado :hover, faz o elemento crescer levemente quando o mouse passar por cima. */
+    /* define como as animações/transições ocorrem. */
+
+    transition: ease-out 0.2s;
+    /* ease-out é uma curva de aceleração que faz a animação começar rápido e terminar devagar.
+    0.2s define que a transição deve durar 0.2 segundos (200 milissegundos).
+    Isso se aplicaria a qualquer mudança de estado (como hover, focus, etc.) tornando a mudança mais suave. */
+
+    box-shadow: 3px 3px 10px rgb(127, 107,107);
+    /* Esta propriedade adiciona uma sombra ao elemento.
+    3px (primeiro valor) - deslocamento horizontal da sombra (para a direita)
+    3px (segundo valor) - deslocamento vertical da sombra (para baixo)
+    10px (terceiro valor) - blur radius (quão difusa/borrada fica a sombra) */
 }

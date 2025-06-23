@@ -152,6 +152,9 @@
 
 @media screen and (max-width:769px) {
 .container{
- width: 100%;
+ width: 550px;
+}
+.container{
+    font-size: 0.9rem;
 }
 }
